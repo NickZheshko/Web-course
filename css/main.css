@@ -76,7 +76,7 @@ h2.title {
     color: #f9bf3b;
 }
 
-.promo .promo_btn {
+.promo .promo_btn, .bonus .bonus_btn {
     display: block;
     margin: 0 auto;
     margin-top: 73px;
@@ -93,6 +93,10 @@ h2.title {
     text-transform: uppercase;
     cursor: pointer;
     outline: none;
+}
+
+.bonus .bonus_btn {
+    margin-top: 52px;
 }
 
 .promo .more {
@@ -120,7 +124,7 @@ h2.title {
     padding: 85px 0 75px 0;
 }
 
-.waiting .waiting_header {
+.waiting .waiting_header, .finish .finish_header, .webinar .webinar_header {
     font-family: Roboto;
     font-size: 30px;
     text-align: center;
@@ -128,7 +132,11 @@ h2.title {
     text-transform: uppercase;
 }
 
-.waiting .waiting_divider {
+.finish .finish_header {
+    color: #fff;
+}
+
+.waiting .waiting_divider, .finish .finish_divider {
     width: 217px;
     height: 4px;
     margin: 0 auto;
@@ -202,3 +210,114 @@ h2.title {
     top: 48px;
     z-index: -1;
 }
+
+.finish {
+    min-height: 447px;
+    background:  url('../icons/result.png') center center/cover no-repeat;
+    padding: 86px 0 79px 0;
+}
+
+.finish .finish_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 41px;
+}
+
+.finish .finish_wrapper .finish_item {
+    width: 204px;
+}
+
+.finish .finish_wrapper .finish_item .finish_circle {
+    display: flex;                  /* т.к. элемент circle содержит в себе элементы и является контейнером*/
+    justify-content: center;
+    align-items: center;
+    width: 115px;
+    height: 115px;
+    margin: 0 auto;                 /* т.к. flex ведет себя, как обычный блочный элемент*/
+    background-color: #b4e2ff;
+    border-radius: 100%;;
+}
+
+.finish .finish_wrapper .finish_item .finish_descr {
+    margin-top: 26px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 17px;
+    line-height: 1.18;
+    color: #efefef;
+}
+
+.bonus {
+    min-height: 628px;
+    padding: 86px 0 87px 0;
+    background-color: #efefef;
+}
+
+.bonus .bonus_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.bonus .bonus_descr {
+    margin-top: 45px;
+    font-family: Roboto;
+    font-size: 30px;
+    line-height: 1.43;
+    text-align: center;
+    color: #252525;
+}
+
+.webinar {
+    min-height: 515px;
+    padding: 89px 0 64px 0;
+}
+
+.webinar .webinar_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.webinar .webinar_header {
+    margin-top: 37px;
+}
+
+.webinar .webinar_subheader {
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    color: #299cbd;
+    text-transform: uppercase;
+}
+
+.webinar .webinar_descr {
+    margin-top: 25px;
+    font-family: Roboto;
+    font-size: 23px;
+    text-align: center;
+    color: #4a4a4a;
+  }
+
+  .footer {
+    min-height: 166px;
+    padding: 61px 0 69px 0;
+    background-color: #1a1a1a;
+  }
+
+  .footer .contacts {
+    display: block;
+    margin: 0 auto;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: center;
+    color: #888;
+  }
+
+  .footer .contacts a {
+    color: #888;
+  }
+
+
+
